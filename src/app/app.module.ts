@@ -6,11 +6,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import {UlsterPage} from '../pages/ulster/ulster';
+import { Flashlight } from '@ionic-native/flashlight';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    UlsterPage
   ],
   imports: [
     BrowserModule,
@@ -19,10 +21,12 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    UlsterPage
   ],
   providers: [
     StatusBar,
+    Flashlight,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
